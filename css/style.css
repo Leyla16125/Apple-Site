@@ -1,0 +1,73 @@
+:root { 
+    --gray: #f2f2f2;
+    --bgray: #8b887eff;
+    --blue: #0071e3;
+    --red: #bf4800;
+    --white: #fff
+ }
+
+.flex{display: flex;}
+.jc-center{justify-content: center;}
+.jc-space{justify-content: space-between;}
+.txtalign{text-align: center;}
+
+p {font-size: 1.3em;}
+header{background-color: var(--gray);}
+.container{padding: 0 5px}
+#fpheader{padding: 30px 10px;}
+.icons a img {padding: 0 5px;}
+label img {padding: 0 5px;}
+#bars {display: none;}
+.nav {
+    transition: .5s;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%; 
+    width: 100%;
+}
+
+#bars:checked ~ .nav {left: 0;}
+.close-menu {
+    display: block;
+    text-align: right;
+    margin: 40px;
+}
+#navmenu{
+    padding: 20px 40px;
+    font: 1.2em / 2 Arial;
+}
+#dmenu{display: none;}
+li a{color: black;}
+
+#mainheader{background-color: var(--white);}
+#phones{
+        gap: 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+}
+.phone {
+    text-align: center;
+    padding: 10px;
+}
+.headertext{padding: 20px;}
+#shoplink{
+    color: var(--blue);
+}
+@media only screen and (min-width: 768px) {
+    .container , #fpheader {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .nav{display:flex ;}
+    .menu-icon{display: none;}
+    #dmenu{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font: 600 0.66em Arial;
+        padding: 0 10px;
+    }
+ 
+}
