@@ -1,26 +1,45 @@
-:root { 
-    --gray: #f2f2f2;
-    --bgray: #8b887eff;
-    --blue: #0071e3;
-    --red: #bf4800;
-    --white: #fff
- }
+* {font-family: Arial, sans-serif;}
+
+.rcolor{color:#bf4800;}
+.bgblack{background-color: black;}
+.bgwhite{background-color: white;}
+.bggray{background-color: #f2f2f2}
+.bglgray{background-color: #fbfbfb}
+.bgblue{background-color: #0071e3;}
+.txtbblue{color: #1e3791;}
+.txtbgray{color: #8b887eff ;}
+.txtwhite{color: white;}
+.txtblue{color:  #0071e3;}
 
 .flex{display: flex;}
 .jc-center{justify-content: center;}
 .jc-space{justify-content: space-between;}
+.block{display: block;}
+.inlineblock{display: inline-block;}
 .txtalign{text-align: center;}
+h6 {
+    font-weight: 400; 
+    font-size: 1.1em;
+    margin: 10px;
+}
+h2 {
+    font: 500 1.8em / 0.8 Arial;
+    margin: 20px 0;
+}
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+.container{padding: 0 30px}
+section {padding: 40px 0;}
 
-p {font-size: 1.3em;}
-header{background-color: var(--gray);}
-.container{padding: 0 5px}
+
 #fpheader{padding: 30px 10px;}
 .icons a img {padding: 0 5px;}
 label img {padding: 0 5px;}
 #bars {display: none;}
 .nav {
     transition: .5s;
-    background-color: var(--white);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -30,18 +49,16 @@ label img {padding: 0 5px;}
 
 #bars:checked ~ .nav {left: 0;}
 .close-menu {
-    display: block;
     text-align: right;
     margin: 40px;
 }
 #navmenu{
     padding: 20px 40px;
-    font: 1.2em / 2 Arial;
+    font-size: 1.2em;
+    line-height: 2;
 }
 #dmenu{display: none;}
 li a{color: black;}
-
-#mainheader{background-color: var(--white);}
 #phones{
         gap: 20px;
         overflow-x: scroll;
@@ -50,12 +67,99 @@ li a{color: black;}
 .phone {
     text-align: center;
     padding: 10px;
+    font-size: 0.7em;
+}
+.new{
+    padding-top: 10px;
+    font-size: 0.6rem;
 }
 .headertext{padding: 20px;}
-#shoplink{
-    color: var(--blue);
+.headertext p {font-size: 1.3em;}
+#shoplink{    
+    font-size: 1em;
+    padding: 10px 0;
 }
+#tnmimg {
+    background: url('../img/titanium.jpeg') center/contain no-repeat;
+    height: 40px;
+    margin: 20px auto; 
+    max-width: 100%; 
+}
+#buy , #buy2 {
+    border-radius: 30px; 
+    font-size: 0.8em;
+    padding: 10px 25px;
+    margin: 30px 0;
+    transition: all 0.3s ease; 
+}
+#buy:hover {
+    box-shadow: 5px 5px 10px white;
+    transform: scale(1.05);
+}
+#buy2:hover {
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.05);
+}
+#tnmbg{
+    background: url('../img/titanium-mobile.jpeg') center / contain no-repeat;
+    height: 50vh;
+    margin-top: 40px ; 
+    max-width: 100%; 
+}
+#newimg{
+    background: url('../img/newphoria.jpeg') center / contain no-repeat;
+    height: 20vh;
+    padding: 10px;
+}
+#iphone  p {
+    font-size: 1.2em;
+}
+#iphnbg{
+    background: url('../img/lovebg.jpeg') center / cover no-repeat;
+    height: 50vh;
+    max-width: 100%; 
+    margin: 40px 0 ;
+}
+#flmbg{
+    background: url('../img/applebg12.jpeg')center / cover no-repeat;
+    height: 50vh;
+    max-width: 100%; 
+    margin: 20px 10px;
+}
+#film {
+    p{
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+
+    a{font-size: 0.8em;}
+}
+#catalogy{flex-wrap: wrap;}
+.catalogy-img{
+    height: 300px;
+    padding: 0 20px;
+}
+#c-img{
+    width: 100%;
+    height: 85%;
+    object-fit: contain;
+    padding: 20px 0;
+}
+hr{ width: 70%;}
+.catalogy-info{
+    font: 0.7em / 2 Arial;
+    padding: 0 10px;
+    margin: auto;
+}
+.catalogy-info img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+.catalogy-info div{padding: 20px 0;}
 @media only screen and (min-width: 768px) {
+    h1 {font-size: 3em;}
     .container , #fpheader {
         max-width: 1200px;
         margin: auto;
@@ -66,8 +170,55 @@ li a{color: black;}
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        font: 600 0.66em Arial;
+        font-weight: 600; 
+        font-size: 0.66em;
         padding: 0 10px;
     }
- 
+    #tnmbg{
+        background: url('../img/titanium-pc.png') center / contain no-repeat;
+        margin: auto;
+        max-width: 60%; 
+    }
+    #newimg {
+        height: 55vh;
+        background-size: cover;
+        margin-top: 30px;
+    }
+    #iphone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #iphntxt, #iphnbg {
+        width: 50%;
+    }
+    #iphnbg {
+        height: 100vh;
+        width: 500px;
+    }
+    #flmbg{display: none;}
+    #film{
+        background: url('../img/applebg12.jpeg') center / cover no-repeat;
+        height: 100vh;
+        border-radius: 50px;
+        margin: 20px;
+       
+    }
+    #flmtxt{color: white;}
+    #txt{font-size: 1.6em;}
+    #flmtxt a i{display: none;}
+    #flmtxt a {
+        background-color: white;
+        opacity: 60%;
+        color: black;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+    #filmtext{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-left: 60px;
+    }
 }
