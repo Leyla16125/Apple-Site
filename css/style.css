@@ -304,7 +304,7 @@ footer a{
     align-items: center;
 }
 input {display: none;}
-label {
+footer label {
     display: flex;
     justify-content: space-between;
     align-items: center;
