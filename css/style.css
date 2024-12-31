@@ -294,6 +294,74 @@ footer {
     font-size: 0.8em;
     color: #000000bd;
 }
+footer a{
+    color: #000000bd;
+
+}
+.ficon{
+    margin: 10px 0 20px 16px;
+    gap: 40px;
+    align-items: center;
+}
+input {display: none;}
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+.ftrlist {
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: 0.3s;
+    margin: 0 0 20px 20px;
+}
+.list div { border-bottom: 1px solid #dee2e6;}
+#list1:checked ~ .ftrlist {
+    max-height: 220px; 
+}
+
+#list4:checked ~ .ftrlist {
+    max-height: 280px; 
+}
+#list5:checked ~ .ftrlist, #list4:checked ~ .ftrlist,
+#list2:checked ~ .ftrlist,#list3:checked ~ .ftrlist,
+#list10:checked ~ .ftrlist, #list11:checked ~ .ftrlist {
+    max-height: 160px;
+}
+#list7:checked ~ .ftrlist, #list6:checked ~ .ftrlist,
+#list3:checked ~ .ftrlist, #list8:checked ~ .ftrlist,#list9:checked ~ .ftrlist {
+    max-height: 70px;
+}
+
+
+#list1:checked + label i,
+#list2:checked + label i,
+#list3:checked + label i,
+#list4:checked + label i,
+#list5:checked + label i,
+#list6:checked + label i,
+#list7:checked + label i,
+#list8:checked + label i,
+#list9:checked + label i,
+#list10:checked + label i,
+#list11:checked + label i {
+    transform: rotate(180deg);
+}
+
+footer{p
+    {   margin: 30px 0;
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+footer{
+    hr{
+        width: 100%;
+    }
+}
 @media (min-width: 349px) {
     .catalogy-one {
       width: 50%; 
@@ -439,7 +507,15 @@ footer {
         height: 60vh;
 
     }
-
+    .flists{display: flex;}
+    .list {width: 20%;}
+    .list i {display: none;}
+    .ftrlist {max-height: 250px;}
+    label a {font-size: 1.2em;}
+    .list div {border-bottom: none;}
+    .end{
+        display: flex;
+        justify-content: space-between;}
 @media only screen and (min-width: 992px) {
     .bloc{width: 33.33%;}
 }
