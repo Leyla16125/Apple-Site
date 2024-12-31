@@ -135,7 +135,10 @@ li a{color: black;}
 
     a{font-size: 0.8em;}
 }
-#catalogy{flex-wrap: wrap;}
+#catalogy{
+    flex-wrap: wrap;
+    margin: auto;
+}
 .catalogy-img{
     height: 300px;
     padding: 0 20px;
@@ -153,11 +156,53 @@ hr{ width: 70%;}
     margin: auto;
 }
 .catalogy-info img{
-    height: 40px;
-    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
     object-fit: contain;
 }
 .catalogy-info div{padding: 20px 0;}
+.catalogy-one {
+    width: 100%;
+    display: block;
+    margin: 10px 0; 
+}
+.end-txt div a{
+    display: inline-block;
+    margin: 15px 0;
+}
+.way{
+    padding: 10px;
+    margin: 15px;
+}
+.wayimg1 {
+    height: 40vh;
+    background: url('../img/savei_phone.jpg') center / contain no-repeat;
+}
+.way h5 {
+    padding: 30px 10px;
+    font-size: 1.5em;
+}
+.wayimg2 {
+    height: 20vh;
+    background: url('../img/appleemoji.jpeg') center / contain no-repeat;
+}
+.ways  a{
+    display: inline-block;
+    font-size: 1em;
+    padding: 20px 0;
+
+}
+
+.wayimg3 {
+    height: 30vh;
+    background: url(../img/aplepphone.jpeg) center / contain no-repeat;
+}
+@media (min-width: 349px) {
+    .catalogy-one {
+      width: 50%; 
+      display: inline-block;
+    }
+  }  
 @media only screen and (min-width: 768px) {
     h1 {font-size: 3em;}
     .container , #fpheader {
@@ -221,4 +266,20 @@ hr{ width: 70%;}
         text-align: left;
         margin-left: 60px;
     }
-}
+    #catalogy{
+        display: flex;
+        margin: 20px 150px;
+    }
+    .catalogy-one {width: 25%; }
+    .cards{
+        display: flex;
+    }
+    .ways{
+        display: flex;
+    }
+    .ways {
+        .way {
+            width: 50%;
+        }
+    }
+}       
