@@ -22,6 +22,7 @@ h6 {
     font-size: 1.1em;
     margin: 10px;
 }
+
 h2 {
     font: 500 1.8em / 0.8 Arial;
     margin: 20px 0;
@@ -186,7 +187,7 @@ hr{ width: 70%;}
     height: 20vh;
     background: url('../img/appleemoji.jpeg') center / contain no-repeat;
 }
-.ways  a{
+.ways  a , .why a , .bloc a, .what a, .get a{
     display: inline-block;
     font-size: 1em;
     padding: 20px 0;
@@ -195,14 +196,123 @@ hr{ width: 70%;}
 
 .wayimg3 {
     height: 30vh;
-    background: url(../img/aplepphone.jpeg) center / contain no-repeat;
+    background: url('../img/aplepphone.jpeg') center / contain no-repeat;
+}
+
+.why, .what {
+    margin: 20px 10px;
+    padding: 30px 15px;
+}
+
+.whybg {
+    height: 30vh;
+    background: url('../img/applebg6.jpeg') left / cover no-repeat;
+}
+.mag, .air, .magic, .blocs, .wtop, .get{
+    margin: 20px 10px;
+    padding: 10px;
+}
+.mag-img {
+    background: url('../img/applephones.jpeg') center / contain no-repeat;
+    height: 30vh;
+    margin: 30px 0;
+}
+.mag p, .magic p {
+    max-width: 300px;
+    margin: 15px auto;
+    font: 1.1em / 1.5 Arial;
+}
+.air-img {
+    background: url('../img/airtag__b81h4czx41yq_medium.jpg') center / contain no-repeat;
+    height: 30vh;
+    margin: 30px 0;
+}
+.air-txt {
+    margin-left: 50px;
+    p {
+        font-size: 1.1em;
+        margin: 10px;
+    }
+} 
+
+.magic-img,.what-img {
+    height: 20vh;
+    margin: 30px 0;
+    background: #fff url('../img/applebg9.jpeg') top / contain no-repeat;
+}
+.bloc {padding: 30px 10px;}
+.bloc {
+    flex: 1; 
+    max-width: 400px; 
+    text-align: center;
+}
+.what-img {background: url('../img/ios17.jpg') center / cover no-repeat;}
+.what-img{display: none;}
+.wtop-img1 {background: url('../img/applebg.jpeg') center / cover no-repeat;}
+.wtop-img2 {background: url('../img/privacy.jpg') bottom / cover no-repeat;}
+.filmoption1 {background: url('../img/tv+_bg.png') center / cover no-repeat;}
+.filmoption2{background: url('../img/music_bg.jpg') center 45px / cover no-repeat;}
+.filmoption3{background: url('../img/fitness_bg.jpg') center / cover no-repeat;}
+.filmoption4{background: url('../img/arcade_bg.png') center / contain no-repeat;}
+.filmoption5{background: url('../img/news_bg.jpeg') center -100px / cover no-repeat;}
+.filmoption6{background: url('../img/gift_bg.jpg') bottom / cover no-repeat;}
+.wtop-img1, .wtop-img2, .filmoption2, .filmoption1, .filmoption4, .filmoption3, .filmoption5, .filmoption6{
+    margin: 10px 0;
+    height: 40vh;
+}
+.get-img{
+    height: 40px;
+    background: url(../img/apple_one.jpg) center / contain no-repeat;
+}
+.get-noneimg{
+    display: none;
+    padding: 20px;
+}
+.get-txt{margin: auto;}
+.getp {
+    font-size: 1.4em;
+    margin: 20px 0
+}
+.app {
+    background: url('../img/research_app.jpg') center / contain no-repeat;
+    height: 30vh;
+    margin: 30px 0;
+}
+.article{
+    font-size: .9em;
+    padding: 20px 0;
+    color: #0000007a;
+    text-align: justify;
+    ol {
+        padding: 0 0 30px 30px;
+    }
+    hr{
+        width: 100%;
+    }
+}
+footer {
+    font-size: 0.8em;
+    color: #000000bd;
 }
 @media (min-width: 349px) {
     .catalogy-one {
       width: 50%; 
       display: inline-block;
     }
-  }  
+  
+}
+@media only screen and (min-width: 576px) {
+    .blocs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bloc {width: 50%;}
+        
+}
+
+
+  
 @media only screen and (min-width: 768px) {
     h1 {font-size: 3em;}
     .container , #fpheader {
@@ -282,4 +392,55 @@ hr{ width: 70%;}
             width: 50%;
         }
     }
-}       
+
+    .why {
+        height: 85vh;
+        background: url('../img/applebg6.jpeg') center / cover no-repeat;
+    }
+    .why div {
+        max-width: 500px;
+        margin: auto;
+    }
+    .whybg{display: none;}
+    .accessories-h1 {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+    }
+    .mag, .air{
+        display: flex;
+        align-items: center;
+        padding: 30px;
+    }
+    .mag {
+        .mag-img {
+            height: 60vh;
+
+        }
+    }
+
+    .mag .mag-txt,.mag .mag-img, .wtop, .app { width: 50%;}
+
+    .mag h2, .air h2, .magic h2{font-size: 2.8em;}
+    .air-img {
+        order: -1;
+        height: 60vh;
+        background-image: url('../img/appleanahtarlik.jpeg');
+        width: 50%;
+    }
+    .magic-img, .what-img {
+        display: inherit;
+        height: 50vh;}
+    .whattop{display: flex;}
+    h2 {font-size: 2.8em;}
+    .get-noneimg{display: inherit;}
+    .get-noneimg img{height: 50vh;}
+    .app {
+        height: 60vh;
+
+    }
+
+@media only screen and (min-width: 992px) {
+    .bloc{width: 33.33%;}
+}
+}
