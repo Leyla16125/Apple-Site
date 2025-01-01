@@ -34,6 +34,26 @@ h1 {
 .container{padding: 0 30px}
 section {padding: 40px 0;}
 
+.gradient-link {
+    position: relative;
+    display: inline-block; 
+    font-size: 1em;
+}
+
+.gradient-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0; 
+    height: 3px; 
+    background: linear-gradient(90deg, orange, yellow, green, blue); 
+    transition: width 1s ease; 
+}
+.gradient-link:hover::after {
+    width: 100%; 
+}
+
 
 #fpheader{padding: 30px 10px;}
 .icons a img {padding: 0 5px;}
@@ -78,7 +98,7 @@ li a{color: black;}
 .headertext p {font-size: 1.3em;}
 #shoplink{    
     font-size: 1em;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 #tnmimg {
     background: url('../img/titanium.jpeg') center/contain no-repeat;
@@ -185,17 +205,22 @@ hr{ width: 70%;}
 }
 .wayimg2 {
     height: 20vh;
+    margin-bottom: 20px;
     background: url('../img/appleemoji.jpeg') center / contain no-repeat;
 }
-.ways  a , .why a , .bloc a, .what a, .get a{
-    display: inline-block;
-    font-size: 1em;
-    padding: 20px 0;
+.ways p{padding-top: 10px;}
 
+.ways a{
+    font-size: 1em;
+}
+.why a, .bloc a, .what a, .get a {
+    font-size: 1em;
+    padding-top: 20px;
 }
 
 .wayimg3 {
     height: 30vh;
+    margin-top: 10px;
     background: url('../img/aplepphone.jpeg') center / contain no-repeat;
 }
 
@@ -210,6 +235,9 @@ hr{ width: 70%;}
 }
 .mag, .air, .magic, .blocs, .wtop, .get{
     margin: 20px 10px;
+    padding: 10px;
+}
+.gets{
     padding: 10px;
 }
 .mag-img {
@@ -262,6 +290,7 @@ hr{ width: 70%;}
 }
 .get-img{
     height: 40px;
+    margin: 20px;
     background: url(../img/apple_one.jpg) center / contain no-repeat;
 }
 .get-noneimg{
@@ -397,6 +426,30 @@ footer{
         font-size: 0.66em;
         padding: 0 10px;
     }
+
+#dmenu li {
+    position: relative; 
+}
+
+#dmenu li::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 1px; 
+    background: black; 
+    transition: all 0.5s ease; 
+    transform: translateX(-50%); 
+}
+
+#dmenu li:hover::after {
+    width: 100%; 
+    left: 0;  
+    transform: translateX(0); 
+}
+
+    
     #tnmbg{
         background: url('../img/titanium-pc.png') center / contain no-repeat;
         margin: auto;
@@ -427,8 +480,9 @@ footer{
         margin: 20px;
        
     }
-    #flmtxt{color: white;}
-    #txt{font-size: 1.6em;}
+    #flmtxt{
+        color: white;
+        margin-left: 70px;}
     #flmtxt a i{display: none;}
     #flmtxt a {
         background-color: white;
@@ -462,7 +516,7 @@ footer{
     }
 
     .why {
-        height: 85vh;
+        height: 90vh;
         background: url('../img/applebg6.jpeg') center / cover no-repeat;
     }
     .why div {
@@ -470,10 +524,9 @@ footer{
         margin: auto;
     }
     .whybg{display: none;}
-    .accessories-h1 {
+    .accessories-h2 {
         width: 300px;
-        text-align: center;
-        padding: 20px;
+        margin: 30px auto;
     }
     .mag, .air{
         display: flex;
