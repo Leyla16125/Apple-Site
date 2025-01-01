@@ -191,7 +191,7 @@ hr{ width: 70%;}
     display: inline-block;
     margin: 15px 0;
 }
-.way{
+.way {
     padding: 10px;
     margin: 15px;
 }
@@ -503,16 +503,21 @@ footer{
         margin: 20px 150px;
     }
     .catalogy-one {width: 25%; }
-    .cards{
+    /* .cards{
         display: flex;
+    } */
+    .way1 {
+        width: 97%;
     }
-    .ways{
-        display: flex;
+    .ways {
+        display: flex
+;
     }
+   
     .ways {
         .way {
             width: 50%;
-        }
+        } 
     }
 
     .why {
@@ -571,5 +576,14 @@ footer{
         justify-content: space-between;}
 @media only screen and (min-width: 992px) {
     .bloc{width: 33.33%;}
-}
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .way1 {
+        width: 33.33%;
+    }
+    .ways {
+        width: 66.66%;
+    }
 }
