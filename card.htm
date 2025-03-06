@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bggray">
+
+  <header class="cart-header bgblack txtwhite">
+    <div class="container flex-space " >
+      <div class="logo ">REDSTORE</div>
+      <nav>
+        <a href="index.html" class="txtwhite">Home</a>
+        <a href="#" class="txtwhite">Products</a>
+        <a href="#" class="txtwhite">About</a>
+        <a href="#" class="txtwhite">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container cart-page" id="cart-page">
+    <h3 style="color: black;  margin:20px 0 ;">Your Cart</h3>
+    <table class="cart-table bgwhite">
+      <thead class="bgblack txtwhite" style="font-size: 0.66em;">
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+      </tbody>
+    </table>
+
+    <div class="cart-summary bgwhite txtalign">
+      <p class="txtwhite">Subtotal: $<span id="sub-total">0</span></p>
+      <p class="txtwhite">Tax: $<span id="tax-amount">0</span></p>
+      <h3 class="txtwhite">Total: $<span id="total-amount">0</span></h3>
+      <button id="checkoutBtn" class="checkout-btn bgblack txtwhite">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer class="cart-footer bgblack txtwhite txtalign">
+    <div class="container">
+      <p>Copyright © 2025 - New Mobile</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

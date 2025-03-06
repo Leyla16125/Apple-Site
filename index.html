@@ -28,8 +28,21 @@
             </ul>
             <div class="icons">
             <a><img src="img/magnifying-glass.svg" alt=""></a>
-            <a><img src="img/bag-shopping.svg" alt=""></a>
-
+            <a href="card.htm" style="position: relative;" id="cartIcon">
+                <img src="img/bag-shopping.svg" alt="">
+                <span id="cart-count"
+                      style="
+                        position: absolute;
+                        top: -8px; 
+                        right: -12px;
+                        background: red;
+                        color: #fff;
+                        border-radius: 50%;
+                        padding: 2px 6px;
+                        font-size: 0.75rem;"
+                >0</span>
+            </a>
+            <a href="login.htm" style="margin-left: 10px;"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
             <input type="checkbox" id="bars" />
             <label for="bars" class="menu-icon">
                 <img src="img/bars.svg" alt="Menu">
@@ -202,7 +215,14 @@
                             <h6>Iphone 15 Pro</h6>
                             <p>The ultimate Iphone</p><br>
                             <p>From $999</p>
-                            <div><a href="#" id="buy2" class="txtwhite bgblue inlineblock">Buy</a></div>
+                            <div><a href="#" id="buy2"
+                                class="buy-btn txtwhite bgblue inlineblock"
+                                data-name="Iphone 15 Pro"
+                                data-price="999"
+                                data-img="img/phone.jpg">
+                                Buy
+                             </a>
+                             </div>
                             <a href="#" class="txtblue block gradient-link">Learn More <i class="fa-solid fa-chevron-right"></i> </a>
                         </div>
                         <hr />
@@ -272,7 +292,13 @@
                             <h6>Iphone 15 Pro</h6>
                             <p>The ultimate Iphone</p><br>
                             <p>From $999</p>
-                            <div><a href="#" id="buy2" class="txtwhite bgblue inlineblock">Buy</a></div>
+                            <div><a href="#" id="buy2"
+                                class="buy-btn txtwhite bgblue inlineblock"
+                                data-name="Iphone 15 Pro"
+                                data-price="999"
+                                data-img="img/phone2.jpg">
+                                Buy
+                             </a></div>
                             <a href="#" class="txtblue block gradient-link">Learn More <i class="fa-solid fa-chevron-right"></i> </a>
                         </div>
                         <hr />
@@ -342,7 +368,13 @@
                             <h6>Iphone 15 Pro</h6>
                             <p>The ultimate Iphone</p><br>
                             <p>From $999</p>
-                            <div><a href="#" id="buy2" class="txtwhite bgblue inlineblock">Buy</a></div>
+                            <div><a href="#" id="buy2"
+                                class="buy-btn txtwhite bgblue inlineblock"
+                                data-name="Iphone 15 Pro"
+                                data-price="999"
+                                data-img="img/phone3.jpg">
+                                Buy
+                             </a></div>
                             <a href="#" class="txtblue block gradient-link">Learn More <i class="fa-solid fa-chevron-right"></i> </a>
                         </div>
                         <hr />
@@ -413,7 +445,13 @@
                             <h6>Iphone 15 Pro</h6>
                             <p>The ultimate Iphone</p><br>
                             <p>From $999</p>
-                            <div><a href="#" id="buy2" class="txtwhite bgblue inlineblock">Buy</a></div>
+                            <div><a href="#" id="buy2"
+                                class="buy-btn txtwhite bgblue inlineblock"
+                                data-name="Iphone 15 Pro"
+                                data-price="999"
+                                data-img="img/phone4.jpg">
+                                Buy
+                             </a></div>
                             <a href="#" class="txtblue block gradient-link">Learn More <i class="fa-solid fa-chevron-right"></i> </a>
                         </div>
                         <hr />
@@ -1186,5 +1224,9 @@
               </div>
         </div>
     </footer>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
